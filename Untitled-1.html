@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {});
+        $("img").hover(cambiar, restaurar); {};
+
+        function cambiar(e) {
+            $(this).attr("src", $(this).attr("src").replace("mona1.png", "mona2.jpg"));
+        }
+
+        function restaurar(e) {
+            $(this).attr("src", $(this).attr("src").replace("mona2.jpg", "mona1.png"));
+        }
+    </script>
+</head>
+
+<body>
+    <div class="img">
+        <img src="mona1.png">
+        <img src="mona1.png">
+        <img src="mona1.png">
+        <img src="mona1.png">
+    </div>
+</body>
+
+</html>
